@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ma Petite Maison - Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-decoration">
+        <span class="cloud cloud1">☁️</span>
+        <span class="cloud cloud2">☁️</span>
+        <span class="sun">☀️</span>
+        <span class="star star1">⭐</span>
+        <span class="star star2">✨</span>
+    </div>
+
+    <main class="game-container">
+
+        <!-- PAGE D'ACCUEIL -->
+
+        <section id="home-screen" class="screen active">
+
+            <div class="welcome-card">
+
+                <div class="house-illustration">🏡</div>
+
+                <span class="tag">JEU ÉDUCATIF</span>
+
+                <h1>Ma Petite Maison</h1>
+
+                <p class="welcome-text">
+                    Coucou petit champion ! 👋
+                    <br>
+                    Es-tu prêt à découvrir les secrets
+                    de la maison ?
+                </p>
+
+                <div class="info-box">
+                    <span>⭐ 15 questions</span>
+                    <span>🎮 3 choix</span>
+                    <span>🏆 Des étoiles</span>
+                </div>
+
+                <button id="start-btn" class="main-btn">
+                    Commencer l'aventure 🚀
+                </button>
+
+                <p class="small-text">
+                    Apprendre en s'amusant ! ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- PAGE DU QUIZ -->
+
+        <section id="quiz-screen" class="screen">
+
+            <header class="quiz-header">
+
+                <div class="game-logo">
+                    🏠 Ma Petite Maison
+                </div>
+
+                <div class="score-box">
+                    ⭐ <span id="score">0</span>
+                </div>
+
+            </header>
+
+            <div class="progress-container">
+
+                <div class="progress-info">
+                    <span id="question-number">Question 1 / 15</span>
+                    <span id="progress-percent">7%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+
+            </div>
+
+            <div class="question-card">
+
+                <div class="question-icon" id="question-icon">
+                    🏠
+                </div>
+
+                <h2 id="question-text">
+                    Où est-ce qu'on dort ?
+                </h2>
+
+                <p class="instruction">
+                    Choisis la bonne réponse 👇
+                </p>
+
+                <div id="answers-container" class="answers-grid">
+                </div>
+
+                <div id="feedback" class="feedback hidden">
+                </div>
+
+                <button id="next-btn" class="main-btn hidden">
+                    Question suivante ➜
+                </button>
+
+            </div>
+
+            <div class="encouragement">
+                💖 Tu es un super petit champion !
+            </div>
+
+        </section>
+
+        <!-- PAGE DES RESULTATS -->
+
+        <section id="result-screen" class="screen">
+
+            <div class="result-card">
+
+                <div class="trophy">🏆</div>
+
+                <h1>Bravo petit champion !</h1>
+
+                <p id="result-message">
+                    Tu as terminé ton aventure !
+                </p>
+
+                <div class="final-score">
+                    <span id="final-score">0 / 15</span>
+                    <p>Ton score final ⭐</p>
+                </div>
+
+                <div id="stars-result" class="stars-result">
+                    ⭐⭐⭐
+                </div>
+
+                <p id="result-description">
+                    Félicitations !
+                </p>
+
+                <button id="restart-btn" class="main-btn">
+                    Rejouer 🔄
+                </button>
+
+                <p class="small-text">
+                    Continue à apprendre chaque jour ! 🌈
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Créé avec ❤️ pour les petits explorateurs
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
